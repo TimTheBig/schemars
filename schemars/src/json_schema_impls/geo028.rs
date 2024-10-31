@@ -32,10 +32,14 @@ impl JsonSchema for Polygon {
         "geo::Polygon".into()
     }
 
-    fn json_schema(_: &mut SchemaGenerator) -> Schema {
+    fn json_schema(generator: &mut SchemaGenerator) -> Schema {
         json_schema!({
             "type": "object",
             "required": ["exterior", "interiors"],
+            "properties": {
+                "exterior": LineString::json_schema(generator),
+                "interiors": Vec<LineString>::json_schema(generator),
+            },
         })
     }
 }
@@ -54,6 +58,7 @@ impl JsonSchema for LineString {
     fn json_schema(generator: &mut SchemaGenerator) -> Schema {
         json_schema!({
             "type": "array",
+            "items": generator.subschema_for::<Coord>(),
         })
     }
 }
@@ -71,7 +76,8 @@ impl JsonSchema for MultiPolygon {
 
     fn json_schema(generator: &mut SchemaGenerator) -> Schema {
         json_schema!({
-            "type": "object",
+            "type": "array",
+            "items": generator.subschema_for::<Polygon>(),
         })
     }
 }
