@@ -5,8 +5,6 @@ use crate::_alloc_prelude::*;
 use geo028::{Coord, LineString, MultiPolygon, Polygon};
 
 impl JsonSchema for Coord {
-    always_inline!();
-
     fn schema_name() -> Cow<'static, str> {
         "Coord".into()
     }
@@ -23,8 +21,6 @@ impl JsonSchema for Coord {
 }
 
 impl JsonSchema for Polygon {
-    always_inline!();
-
     fn schema_name() -> Cow<'static, str> {
         "Polygon".into()
     }
@@ -46,8 +42,6 @@ impl JsonSchema for Polygon {
 }
 
 impl JsonSchema for LineString {
-    always_inline!();
-
     fn schema_name() -> Cow<'static, str> {
         "LineString".into()
     }
