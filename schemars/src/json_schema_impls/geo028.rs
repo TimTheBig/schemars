@@ -38,7 +38,7 @@ impl JsonSchema for Polygon {
             "required": ["exterior", "interiors"],
             "properties": {
                 "exterior": LineString::json_schema(generator),
-                "interiors": Vec<LineString>::json_schema(generator),
+                "interiors": <Vec<LineString>>::json_schema(generator),
             },
         })
     }
