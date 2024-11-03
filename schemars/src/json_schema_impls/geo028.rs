@@ -13,9 +13,14 @@ impl JsonSchema for Coord {
         "geo::Coord".into()
     }
 
-    fn json_schema(_: &mut SchemaGenerator) -> Schema {
+    fn json_schema(generator: &mut SchemaGenerator) -> Schema {
         json_schema!({
             "type": "object",
+            "required": ["x", "y"],
+            "properties": {
+                "x": f64::json_schema(generator),
+                "y": f64::json_schema(generator),
+            },
         })
     }
 }
@@ -59,8 +64,6 @@ impl JsonSchema for LineString {
 }
 
 impl JsonSchema for MultiPolygon {
-    always_inline!();
-
     fn schema_name() -> Cow<'static, str> {
         "MultiPolygon".into()
     }
