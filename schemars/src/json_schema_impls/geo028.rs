@@ -64,6 +64,8 @@ impl JsonSchema for LineString {
 }
 
 impl JsonSchema for MultiPolygon {
+    always_inline!();
+
     fn schema_name() -> Cow<'static, str> {
         "MultiPolygon".into()
     }
