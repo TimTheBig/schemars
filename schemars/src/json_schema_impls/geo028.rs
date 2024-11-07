@@ -59,6 +59,7 @@ impl JsonSchema for LineString {
         json_schema!({
             "type": "array",
             "items": generator.subschema_for::<Coord>(),
+            "minimum": 2,
         })
     }
 }
