@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.0-alpha.17] - 2024-11-26
+
+- Added `geo`
+- Updated `smol_str` from 0.2.1 => 0.3.2
+- Updated `smallvec` from 1.0 => 1.13
+
 ## [1.0.0-alpha.16] - 2024-11-25
 
 ### Removed (_⚠️ breaking changes ⚠️_)

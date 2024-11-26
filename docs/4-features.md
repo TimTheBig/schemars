@@ -22,9 +22,10 @@ Schemars can implement `JsonSchema` on types from several popular crates, enable
 - `rust_decimal1` - [rust_decimal](https://crates.io/crates/rust_decimal) (^1.0)
 - `semver1` - [semver](https://crates.io/crates/semver) (^1.0.9)
 - `smallvec1` - [smallvec](https://crates.io/crates/smallvec) (^1.0)
-- `smol_str02` - [smol_str](https://crates.io/crates/smol_str) (^0.2.1)
+- `smol_str03` - [smol_str](https://crates.io/crates/smol_str) (^0.3.2)
 - `url2` - [url](https://crates.io/crates/url) (^2.0)
 - `uuid1` - [uuid](https://crates.io/crates/uuid) (^1.0)
+- `geo029` - [geo](https://crates.io/crates/geo) (^0.29)
 
 For example, to implement `JsonSchema` on types from `chrono`, enable it as a feature in the `schemars` dependency in your `Cargo.toml` like so:
 

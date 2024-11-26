@@ -2,7 +2,7 @@ use crate::SchemaGenerator;
 use crate::{json_schema, JsonSchema, Schema};
 use alloc::borrow::Cow;
 use crate::_alloc_prelude::*;
-use geo028::{Coord, LineString, MultiPolygon, Polygon};
+use geo029::{Coord, LineString, MultiPolygon, Polygon};
 
 impl JsonSchema for Coord {
     fn schema_name() -> Cow<'static, str> {

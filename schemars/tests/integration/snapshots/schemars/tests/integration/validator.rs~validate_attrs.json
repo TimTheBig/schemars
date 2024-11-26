@@ -20,16 +20,16 @@
       "pattern": "^[Hh]ello"
     },
     "contains_str": {
-      "type": "string",
-      "pattern": "substring\\.\\.\\."
+      "pattern": "substring\\.\\.\\.",
+      "type": "string"
     },
     "email_address": {
-      "type": "string",
-      "format": "email"
+      "format": "email",
+      "type": "string"
     },
     "homepage": {
-      "type": "string",
-      "format": "uri"
+      "format": "uri",
+      "type": "string"
     },
     "non_empty_str": {
       "type": "string",
@@ -50,8 +50,8 @@
     "x": {
       "type": "integer",
       "format": "int32",
-      "minimum": -100,
-      "maximum": 100
+      "maximum": 100,
+      "minimum": -100
     }
   },
   "required": [

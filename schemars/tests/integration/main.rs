@@ -39,7 +39,7 @@ mod settings;
 mod skip;
 #[cfg(feature = "smallvec1")]
 mod smallvec;
-#[cfg(feature = "smol_str02")]
+#[cfg(feature = "smol_str03")]
 mod smol_str;
 mod std_types;
 mod structs;

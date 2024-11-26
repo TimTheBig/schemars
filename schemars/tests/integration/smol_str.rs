@@ -1,4 +1,4 @@
-use smol_str02::SmolStr;
+use smol_str03::SmolStr;
 
 use crate::prelude::*;
 

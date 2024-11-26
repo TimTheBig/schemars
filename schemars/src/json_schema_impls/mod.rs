@@ -80,8 +80,8 @@ mod semver1;
 #[cfg(feature = "smallvec1")]
 forward_impl!((<A: smallvec1::Array> crate::JsonSchema for smallvec1::SmallVec<A> where A::Item: crate::JsonSchema) => alloc::vec::Vec<A::Item>);
 
-#[cfg(feature = "smol_str02")]
-forward_impl!(smol_str02::SmolStr => alloc::string::String);
+#[cfg(feature = "smol_str03")]
+forward_impl!(smol_str03::SmolStr => alloc::string::String);
 
 #[cfg(feature = "url2")]
 mod url2;
@@ -89,5 +89,5 @@ mod url2;
 #[cfg(feature = "uuid1")]
 mod uuid1;
 
-#[cfg(feature = "geo028")]
-mod geo028;
+#[cfg(feature = "geo029")]
+mod geo029;
