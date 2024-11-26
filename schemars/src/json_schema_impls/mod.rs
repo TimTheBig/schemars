@@ -88,3 +88,6 @@ mod url2;
 
 #[cfg(feature = "uuid1")]
 mod uuid1;
+
+#[cfg(feature = "geo028")]
+mod geo028;
