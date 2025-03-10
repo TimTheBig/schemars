@@ -91,3 +91,6 @@ mod uuid1;
 
 #[cfg(feature = "geo029")]
 mod geo029;
+
+#[cfg(feature = "geo-3d030")]
+mod geo_3d030;
